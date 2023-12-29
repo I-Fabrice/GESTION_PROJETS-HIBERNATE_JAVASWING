@@ -1,0 +1,74 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"visible": true
+			"$locationPolicy": 1
+			"minimumSize": new java.awt.Dimension( 550, 570 )
+			"defaultCloseOperation": 2
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+					"background": new java.awt.Color( 204, 204, 204, 255 )
+					"foreground": new java.awt.Color( 51, 51, 51, 255 )
+					"font": new java.awt.Font( "Tahoma", 1, 15 )
+					"border": new javax.swing.border.BevelBorder( 0, null, null, null, null )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 35
+				"width": 235
+				"height": 425
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "ADD"
+				"font": new java.awt.Font( "Tahoma", 1, 15 )
+				"background": new java.awt.Color( 204, 204, 204, 255 )
+				"foreground": new java.awt.Color( 153, 153, 153, 255 )
+				"border": new javax.swing.border.BevelBorder( 0, null, null, null, null )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 340
+				"y": 35
+				"height": 50
+				"width": 120
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "REMOVE"
+				"background": new java.awt.Color( 204, 204, 204, 255 )
+				"foreground": new java.awt.Color( 153, 153, 153, 255 )
+				"font": new java.awt.Font( "Tahoma", 1, 15 )
+				"border": new javax.swing.border.BevelBorder( 0, null, null, null, null )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 340
+				"y": 110
+				"width": 120
+				"height": 50
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "CANCEL"
+				"font": new java.awt.Font( "Tahoma", 1, 15 )
+				"border": new javax.swing.border.BevelBorder( 0, null, null, null, null )
+				"background": new java.awt.Color( 204, 204, 204, 255 )
+				"foreground": new java.awt.Color( 153, 153, 153, 255 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button3MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 340
+				"y": 185
+				"width": 120
+				"height": 50
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 170, 40 )
+			"size": new java.awt.Dimension( 495, 500 )
+		} )
+	}
+}

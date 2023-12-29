@@ -1,0 +1,333 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0:1.0"
+			"$rowSpecs": "0:1.0"
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "frame"
+			"$locationPolicy": 1
+			"visible": true
+			"defaultCloseOperation": 3
+			"background": new java.awt.Color( 97, 212, 195, 255 )
+			"font": new java.awt.Font( "Tahoma", 0, 15 )
+			"minimumSize": new java.awt.Dimension( 1200, 750 )
+			"maximizedBounds": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "splitPane1"
+				"dividerLocation": 300
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel1"
+					"foreground": new java.awt.Color( 204, 204, 204, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "ESPACE DE TRAVAIL"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\slack_new_96px.png" )
+						"font": new java.awt.Font( "Tahoma", 1, 17 )
+						"foreground": new java.awt.Color( 60, 63, 65, 255 )
+						"background": new java.awt.Color( 187, 187, 187, 255 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 20
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "  Delete team"
+						"font": new java.awt.Font( "Tahoma", 1, 16 )
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\delete_48488px.png" )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label4MouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 90
+						"y": 130
+						"width": 145
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": "  Settings"
+						"font": new java.awt.Font( "Tahoma", 1, 16 )
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\engineering_64px.png" )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label5MouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 90
+						"y": 165
+						"width": 120
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox1"
+						"font": new java.awt.Font( "Tahoma", 1, 15 )
+						addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "comboBox1ItemStateChanged", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBox1ActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 60
+						"y": 80
+						"width": 200
+						"height": 35
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+						name: "panel6"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 70
+						"y": 590
+						"height": 100
+						"width": 100
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": "Show all task?"
+						"font": new java.awt.Font( "Tahoma", 1, 14 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "label7MouseEntered", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "label7MouseExited", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label7MouseClicked", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 105
+						"height": 35
+						"x": 195
+						"y": 640
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"columns": 3
+						"rows": 0
+					} ) {
+						name: "panel2"
+						"maximumSize": new java.awt.Dimension( 32767, 750 )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+							name: "panel3"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label1"
+								"text": "A  FAIRE"
+								"font": &Font0 new java.awt.Font( "Tahoma", 1, 16 )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"x": 25
+								"y": 30
+								"width": 100
+								"height": 25
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+							name: "panel4"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label2"
+								"text": "EN COURS"
+								"font": #Font0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"width": 105
+								"height": 25
+								"x": 25
+								"y": 30
+							} )
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+							name: "panel5"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label6"
+								"text": "TERMINER"
+								"font": #Font0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+								"width": 105
+								"height": 25
+								"x": 25
+								"y": 30
+							} )
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				"background": new java.awt.Color( 97, 212, 195, 255 )
+				"foreground": new java.awt.Color( 0, 98, 196, 255 )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "File"
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\file_24px.png" )
+					"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					"background": new java.awt.Color( 97, 212, 195, 255 )
+					"font": new java.awt.Font( "Tahoma", 0, 15 )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu5"
+						"text": "New"
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem1"
+							"text": "Task            "
+							"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\work_authorisation_24px.png" )
+							"font": new java.awt.Font( "Tahoma", 0, 15 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem2"
+							"text": "Team"
+							"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\people_24px.png" )
+							"font": new java.awt.Font( "Tahoma", 0, 15 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem3"
+							"text": "Budget"
+							"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\money_24px.png" )
+							"font": new java.awt.Font( "Tahoma", 0, 15 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem3ActionPerformed", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem4"
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+						"text": "New project                "
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 78, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem4ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JSeparator" ) {
+						name: "separator1"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem17"
+						"text": "Budget"
+						"font": new java.awt.Font( "Tahoma", 0, 16 )
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\general_ledger_64px.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem17ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem7"
+						"text": "My project"
+						"font": new java.awt.Font( "Tahoma", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem7ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+						name: "separator2"
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu6"
+						"text": "Settings"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\settings_24px.png" )
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem5"
+							"text": "Update"
+							"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\update_left_rotation_24px.png" )
+							"font": new java.awt.Font( "Tahoma", 0, 15 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem5ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem6"
+							"text": "Delete account"
+							"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\delete_24px.png" )
+							"font": new java.awt.Font( "Tahoma", 0, 15 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem6ActionPerformed", true ) )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem8"
+						"text": "Exit"
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem8ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "Edit"
+					"background": new java.awt.Color( 97, 212, 195, 255 )
+					"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\edit_folder_24px.png" )
+					"font": new java.awt.Font( "Tahoma", 0, 15 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem9"
+						"text": "Redo                    "
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 90, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem9ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem10"
+						"text": "Undo typing   "
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 90, 195, false )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "menuItem10MouseClicked", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "menuItem10MouseClicked", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem10ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+						name: "separator3"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem11"
+						"text": "Cut"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\cut_24px.png" )
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 88, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem11ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem12"
+						"text": "Copy"
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 67, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem12ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem13"
+						"text": "Paste"
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem13ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "Windows"
+					"background": new java.awt.Color( 97, 212, 195, 255 )
+					"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\windows8_24px.png" )
+					"font": new java.awt.Font( "Tahoma", 0, 15 )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu7"
+						"text": "Go to project             "
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\Laptop with cursor_24px.png" )
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu4"
+					"text": "Help"
+					"background": new java.awt.Color( 97, 212, 195, 255 )
+					"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\help_242px.png" )
+					"font": new java.awt.Font( "Tahoma", 0, 15 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem16"
+						"text": "Contact             "
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem14"
+						"text": "Keyboard shortcuts      "
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+					} )
+					add( new FormComponent( "javax.swing.JPopupMenu$Separator" ) {
+						name: "separator4"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem15"
+						"text": "About"
+						"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\al-peco\\Downloads\\high_importance_24px.png" )
+						"font": new java.awt.Font( "Tahoma", 0, 15 )
+						"accelerator": static javax.swing.KeyStroke getKeyStroke( 65, 130, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem15ActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 0 )
+			"size": new java.awt.Dimension( 1090, 740 )
+		} )
+	}
+}
